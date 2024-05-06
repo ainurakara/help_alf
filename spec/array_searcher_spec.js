@@ -18,6 +18,12 @@ describe('Array Searcher', function() {
 	it('should return [Spaceship lost forever] for a map: ".........."', function() {
 		expect(arr_searcher.findSpaceship('..........')).toEqual("Spaceship lost forever");
 	});
+
+	it('should return [Spaceship lost forever] for a map: ""', function() {
+		expect(arr_searcher.findSpaceship('')).toEqual("Spaceship lost forever");
+	});
+
+
 });
 
 
