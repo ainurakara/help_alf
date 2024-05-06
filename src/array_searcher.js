@@ -12,10 +12,15 @@ SearchArray.prototype.findSpaceship = function(map) {
 
         let rows = map.split("\n");
 
-        if (rows[0][0] == "X"){
-            return [0,0];
-        }
-        return [0,9];            
+        for (let i = 0; i < rows[0].length; i++)  
+        {
+            if (rows[0][i] == "X")
+            {
+                return[0, i];
+            }           
+        } 
+        
+        return "Spaceship lost forever"; 
     }
 }
        
