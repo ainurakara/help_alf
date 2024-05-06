@@ -2,25 +2,23 @@
 function SearchArray() {}
 SearchArray.prototype.findSpaceship = function(map) {
 
+    
+    let rows = map.split("\n");
 
     let num_rows = map.split("\n").length;
 
-    if(num_rows > 2) {
-        return [7,2]      
-    }
-    else{
-
-        let rows = map.split("\n");
-
-        for (let i = 0; i < rows[0].length; i++)  
-        {
-            if (rows[0][i] == "X")
+    for (let j = 0; j < num_rows; j++)
+    {
+        for (let i = 0; i < rows[j].length; i++)  
             {
-                return[0, i];
-            }           
-        } 
-        
+                if (rows[j][i] == "X")
+                {
+                    return[j, i];
+                }           
+            } 
+
+    }       
         return "Spaceship lost forever"; 
-    }
-}
+ }
+
        

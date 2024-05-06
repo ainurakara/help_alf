@@ -3,3 +3,4 @@
 3. ".........X\n" =>[0,9] OK
 4. ".........." => Spaceship lost forever OK
 5. ""=>Spaceship lost forever OK
+6. "..........\nX.........\n" =>[1, 0] Doing
