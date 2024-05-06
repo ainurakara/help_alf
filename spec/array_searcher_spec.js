@@ -10,6 +10,10 @@ describe('Array Searcher', function() {
 	it('should return [0,0] for a map: "X.........\n"', function() {
 		expect(arr_searcher.findSpaceship('X.........\n')).toEqual([0,0]);
 	});
+
+	it('should return [0,9] for a map: ".........X\n"', function() {
+		expect(arr_searcher.findSpaceship('.........X\n')).toEqual([0,9]);
+	});
 });
 
 
