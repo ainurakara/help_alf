@@ -27,7 +27,6 @@ describe('Array Searcher', function() {
 		expect(arr_searcher.findSpaceship('..........\nX.........\n')).toEqual([1,0]);
 	});
 
-
 });
 
 
